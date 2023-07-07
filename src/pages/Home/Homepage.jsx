@@ -34,7 +34,7 @@ const Homepage = () => {
           <div className="flex flex-col md:flex-row md:justify-between items-center mx-4 md:mx-auto lg:w-[1040px] mb-5">
             <div className="overflow-hidden rounded-xl transform rotate-3 w-[240px] md:w-[300px] lg:w-[250px] animate__animated animate__lightSpeedInLeft">
               <img
-                src="/src/assets/images/portraitWhite.jpeg"
+                src="/public/portraitWhite.jpeg"
                 alt="about"
                 className="rounded-xl object-contain"
               />
