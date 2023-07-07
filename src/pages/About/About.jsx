@@ -23,7 +23,6 @@ const About = () => {
 
       <div className="flex flex-col min-h-screen">
         <NavBar active="About" />
-
         <div className="flex-grow">
           <div className="container mx-auto md:mt-20 p-5">
             <div className="flex flex-col md:flex-row md:justify-evenly items-center">
