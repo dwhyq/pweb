@@ -1,0 +1,33 @@
+.nav-item {
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.nav-item.active a {
+	color: rgb(40, 235, 22);
+}
+
+.nav-link {
+	position: relative;
+	transition: width 0.3s;
+}
+
+.nav-link::before {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: rgb(13, 228, 13);
+	transition: width 0.3s;
+}
+
+.nav-link:hover::before {
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.nav-item.active a {
+		color: rgb(94, 255, 80);
+	}
+}
