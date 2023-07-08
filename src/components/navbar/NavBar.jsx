@@ -101,14 +101,14 @@ const NavBar = ({ active }) => {
           <div className="flex items-center">
             {menuOpen ? (
               <div
-                className="block text-2xl text-white md:hidden cursor-pointer z-50 bg-black rounded-lg p-1"
+                className="block text-2xl text-white md:hidden cursor-pointer z-50 bg-orange-500 rounded-lg p-1"
                 onClick={closeMenu}
               >
                 <MdClose />
               </div>
             ) : (
               <div
-                className="block md:hidden cursor-pointer text-2xl bg-gray-200 rounded-lg p-1"
+                className="block md:hidden cursor-pointer text-2xl bg-orange-500 rounded-lg p-1"
                 onClick={toggleMenu}
               >
                 <TiThMenuOutline />
