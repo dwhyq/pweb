@@ -41,7 +41,7 @@ const INFO = {
 		},
 
 		{	
-			image: "/src/assets/images/passwordgen.png",
+			image: "/passwordgen.png",
 			title: "Project 2",
 			description:
 				"Javascript password-generator that also allows you to copy and clear the password that was generated.",
@@ -50,7 +50,7 @@ const INFO = {
 		},
 
 		{	
-			image: "/src/assets/images/foodweb.png",
+			image: "/foodweb.png",
 			title: "Project 3",
 			description:
 				"A food web app UI built with React & Tailwind-css it has few features like: Filter food based on types | Filter food based on prices |",
