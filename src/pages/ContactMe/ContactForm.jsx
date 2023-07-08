@@ -27,8 +27,8 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md m-auto">
-      <div className="mb-4">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto w-fit">
+      <div className="mb-4 w-fit">
         <label htmlFor="fullName" className="block mb-2">
           Full Name
         </label>
@@ -40,7 +40,7 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder="Enter your full name"
           required
-          className="w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+          className="w-[3/4] sm:w-full md:w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
         />
       </div>
       <div className="mb-4">
@@ -55,7 +55,7 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder="Enter your email address"
           required
-          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none bg-transparent focus:ring-orange-500 focus:border-orange-500"
+          className="w-[3/4] sm:w-full md:w-full px-3 py-2 border border-gray-300 rounded focus:outline-none bg-transparent focus:ring-orange-500 focus:border-orange-500"
         />
       </div>
       <div className="mb-4">
@@ -69,20 +69,22 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder="Type your message here"
           required
-          className="w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+          className="sm:w-full w-full md:w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
         ></textarea>
       </div>
+      <div className="w-full">
       <Link to={''} className="">
-      <Button
-        type="submit"
-        size="xs"
-        variant="full"
-        className="w-full px-4 py-2 text-white border bg-gray-500 rounded hover:bg-transparent focus:outline-none active:bg-orange-600"
-      >
-        Submit
-      </Button>
+        <Button
+          type="submit"
+          size="md"
+          variant="full"
+          className="text-white border bg-black rounded hover:bg-transparent hover:border-orange-500 focus:outline-none active:bg-orange-600 font-bold"
+        >
+          Send
+        </Button>
       </Link>
-      
+      </div>
+     
     </form>
   );
 };

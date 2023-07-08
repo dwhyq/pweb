@@ -24,7 +24,7 @@ const About = () => {
       <div className="flex flex-col min-h-screen">
         <NavBar active="About" />
         <div className="flex-grow">
-          <div className="container mx-auto md:mt-20 p-5">
+          <div className="container mt-12 mx-auto md:mt-20 p-5">
             <div className="flex flex-col md:flex-row md:justify-evenly items-center">
               <div className="overflow-hidden rounded-xl transform rotate-3 w-[240px] md:w-[300px] lg:w-[300px] animate__animated animate__lightSpeedInLeft">
                 <img src="/ikennaInBlue.jpg" alt="about" className="rounded-xl object-contain" />
@@ -33,11 +33,11 @@ const About = () => {
                 <div className="font-bold text-lg md:text-2xl p-2 mt-2   w-fit text-left animate__animated animate__zoomIn">
                   {INFO.about.title}
                 </div>
-                <div className="md:overflow-hidden md:max-h-[400px] text-gray-100 p-2 w-full md:w-[470px] lg:w-[660px] animate__animated animate__zoomIn">{INFO.about.description}</div>
+                <div className="md:overflow-hidden md:h text-gray-100 p-2 w-full md:w-[470px] lg:w-[660px] animate__animated animate__zoomIn">{INFO.about.description}</div>
               </div>
             </div>
           </div>
-          <div className="mt-6 md:my-10">
+          <div className="md:my-10 my-12">
               <ContactForm />
             </div>
         </div>

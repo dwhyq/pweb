@@ -48,7 +48,7 @@ const ReadArticle = () => {
 
 					<div className="p-2">
 						<div className="border-l-2 border-gray-300 text-base flex items-center mt-5">
-							<div className="ml-2 text-gray-600">
+							<div className="ml-2 text-gray-100">
 								{article().date}
 							</div>
 						</div>
@@ -57,7 +57,7 @@ const ReadArticle = () => {
 							{article().title}
 						</div>
 
-						<div className="text-base text-gray-700">
+						<div className="text-base text-gray-100">
 							<ArticleStyle>{article().body}</ArticleStyle>
 						</div>
 					</div>
