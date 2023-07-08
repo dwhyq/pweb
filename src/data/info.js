@@ -32,30 +32,30 @@ const INFO = {
 
 	projects: [
 		{
-			image: "/src/assets/images/todoapp.png",
+			image: "/todoapp.png",
 			title: "Project 1",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"A todo app built with React & Tailwind-css ,it allows you : Mark tasks as complete to track your progress | Prioritize important tasks to stay focused | Edit existing todo's to keep your information up to date | Delete completed tasks to maintain a clutter-free list",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://todo-web-app-drab.vercel.app/",
 		},
 
 		{	
 			image: "/src/assets/images/passwordgen.png",
 			title: "Project 2",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Javascript password-generator that also allows you to copy and clear the password that was generated.",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://password-generator-dwhyq.vercel.app/",
 		},
 
 		{	
 			image: "/src/assets/images/foodweb.png",
 			title: "Project 3",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"A food web app UI built with React & Tailwind-css it has few features like: Filter food based on types | Filter food based on prices |",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://food-web-app-gilt.vercel.app/",
 		},
 		
 	],
