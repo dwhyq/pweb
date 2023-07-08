@@ -32,7 +32,7 @@ const Articles = () => {
 				<div className="flex flex-col flex-grow pt-7 m-auto md:mt-20">
 					<div className="w-fit pt-5 m-auto">
 						<div className="flex border border-white bg-white rounded-full shadow-md m-2 top-4vh z-50">
-							<img src="/src/assets/logo.png" width={46} />
+							<img src="/public/logo.png" width={46} />
 						</div>
 					</div>
 

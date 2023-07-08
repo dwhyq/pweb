@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="flex-grow p-5">
           <div className="w-fit pt-10 mx-auto">
             <div className="flex border border-white rounded-full shadow-md top-4vh z-50 lg:hidden md:hidden">
-            <img src="/src/assets/logo.png" width={46} />
+            <img src="/public/logo.png" width={46} />
             </div>
           </div>
           <div className="mt-10 text-center">
