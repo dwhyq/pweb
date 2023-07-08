@@ -27,7 +27,7 @@ const About = () => {
           <div className="container mx-auto md:mt-20 p-5">
             <div className="flex flex-col md:flex-row md:justify-evenly items-center">
               <div className="overflow-hidden rounded-xl transform rotate-3 w-[240px] md:w-[300px] lg:w-[300px] animate__animated animate__lightSpeedInLeft">
-                <img src="/public/ikennaInBlue.jpg" alt="about" className="rounded-xl object-contain" />
+                <img src="/ikennaInBlue.jpg" alt="about" className="rounded-xl object-contain" />
               </div>
               <div className="flex flex-col  md:ml-8 mt-6 md:mt-0">
                 <div className="font-bold text-lg md:text-2xl p-2 mt-2   w-fit text-left animate__animated animate__zoomIn">
