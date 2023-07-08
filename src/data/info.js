@@ -32,7 +32,7 @@ const INFO = {
 
 	projects: [
 		{
-			image: "/public/todoapp.png",
+			image: "/src/assets/images/todoapp.png",
 			title: "Project 1",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
@@ -42,7 +42,7 @@ const INFO = {
 		},
 
 		{	
-			image: "/public/passwordgen.png",
+			image: "/src/assets/images/passwordgen.png",
 			title: "Project 2",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
@@ -52,7 +52,7 @@ const INFO = {
 		},
 
 		{	
-			image: "/public/foodweb.png",
+			image: "/src/assets/images/foodweb.png",
 			title: "Project 3",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
