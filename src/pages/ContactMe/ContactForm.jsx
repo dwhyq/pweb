@@ -28,7 +28,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto w-fit">
-      <div className="mb-4 w-fit">
+      <div className="mb-3 w-fit">
         <label htmlFor="fullName" className="block mb-2">
           Full Name
         </label>
@@ -43,7 +43,7 @@ const ContactForm = () => {
           className="w-[3/4] sm:w-full md:w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
         />
       </div>
-      <div className="mb-4">
+      <div className="mb-3">
         <label htmlFor="email" className="block mb-2">
           Email
         </label>
@@ -58,7 +58,7 @@ const ContactForm = () => {
           className="w-[3/4] sm:w-full md:w-full px-3 py-2 border border-gray-300 rounded focus:outline-none bg-transparent focus:ring-orange-500 focus:border-orange-500"
         />
       </div>
-      <div className="mb-4">
+      <div className="mb-3">
         <label htmlFor="message" className="block mb-2">
           Message
         </label>
@@ -72,13 +72,13 @@ const ContactForm = () => {
           className="sm:w-full w-full md:w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
         ></textarea>
       </div>
-      <div className="w-full">
+      <div className="w-fit m-auto">
       <Link to={''} className="">
         <Button
           type="submit"
           size="md"
           variant="full"
-          className="text-white border bg-black rounded hover:bg-transparent hover:border-orange-500 focus:outline-none active:bg-orange-600 font-bold"
+          className="text-white text-lg text-center bg-orange-500 rounded hover:bg-transparent hover:border border-orange-500 focus:outline-none active:bg-orange-600 font-bold"
         >
           Send
         </Button>

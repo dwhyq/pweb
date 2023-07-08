@@ -3,7 +3,7 @@ const INFO = {
 		title: "Ikenna.dev",
 		name: "Ikenna Ikegwuonu.",
 		email: "ikennasolvedit@gmail.com",
-		logo: "../logo.png",
+		logo: "/logo.png",
 	},
 
 	contact: {
