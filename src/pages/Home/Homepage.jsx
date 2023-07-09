@@ -84,7 +84,7 @@ const Homepage = () => {
                 </Link>
     
                 <DownloadBtn
-                  fileUrl="/src/assets/myCv/resume.pdf"
+                  fileUrl="/src/assets/myCv/ikennadev-cv.pdf"
                   fileName="resume.pdf"
                 />
               </div>
