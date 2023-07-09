@@ -39,7 +39,7 @@ const ReadArticle = () => {
 				<div className="flex flex-col gap-5 flex-grow p-2 m-auto md:mt-20">
 					<div className="w-fit">
 						<img
-							src="/public/back-button.png"
+							src="/back-button.png"
 							alt="back"
 							className="mt-16 w-1/12 rounded-full border border-orange-500 md:w-[40px] bg-white"
 							onClick={() => navigate(-1)}
