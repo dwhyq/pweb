@@ -47,17 +47,17 @@ const ReadArticle = () => {
 					</div>
 
 					<div className="p-2">
-						<div className="border-l-2 border-gray-300 text-base flex items-center mt-5">
+						<div className="border-l-2 border-gray-300 text-base flex items-center mt-5 w-fit">
 							<div className="ml-2 text-gray-100">
 								{article().date}
 							</div>
 						</div>
 
-						<div className="font-bold mt-5 text-lg text-left mb-3">
+						<div className="font-bold mt-5 text-lg text-left mb-3 w-fit">
 							{article().title}
 						</div>
 
-						<div className="text-base text-gray-100">
+						<div className="text-gray-100 text-center">
 							<ArticleStyle>{article().body}</ArticleStyle>
 						</div>
 					</div>

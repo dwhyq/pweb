@@ -25,8 +25,8 @@ const Projects = () => {
 
       <div className="min-h-screen flex flex-col">
         <NavBar active="projects" />
-        <div className="flex-grow p-5">
-          <div className="w-fit pt-10 mx-auto">
+        <div className="flex-grow p-5 mt-7">
+          <div className="w-fit pt-10 mx-auto hidden">
             <div className="flex border border-white rounded-full bg-white shadow-md top-4vh z-50 lg:hidden md:hidden">
             <img src="/logo.png" width={46} />
             </div>
