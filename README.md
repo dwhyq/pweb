@@ -5,6 +5,8 @@ Built with Vite and TailwindCSS in under 30 hours.
 A personal website designed to showcase my work and provide information about myself. 
 The project utilizes the Vite and Tailwind CSS frameworks to create a fast and responsive web application.
 
+ [view live link](https://ikenna-dev-one.vercel.app/)
+
 
 ### Technologies Used
 
