@@ -29,7 +29,7 @@ const Homepage = () => {
       <div className="flex flex-col min-h-screen overflow-hidden">
         <NavBar active="home" />
 
-        <div className="flex flex-col flex-grow pt-24 md:pt-40">
+        <div className="flex flex-col flex-grow pt-24 md:pt-32">
           <div className="flex flex-col md:flex-row md:justify-between items-center mx-4 md:mx-auto lg:w-[1040px] mb-5">
             <div className="overflow-hidden rounded-xl transform rotate-3 w-[240px] md:w-[300px] lg:w-[250px] animate__animated animate__lightSpeedInLeft">
               <img
@@ -38,7 +38,7 @@ const Homepage = () => {
                 className="rounded-xl object-contain"
               />
             </div>
-            <div className="p-2 md:w-fit">
+            <div className="p-2 md:w-fit m-auto">
               <h1 className="w-fit font-bold text-4xl p-2 text-left animate__animated animate__zoomIn">
                 {INFO.homepage.title}
               </h1>

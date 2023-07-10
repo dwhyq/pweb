@@ -8,7 +8,7 @@ const Footer = () => {
 				<div className="w-full bg-orange-500 flex flex-col justify-center mt-5 py-2">
 					<ul className="flex flex-wrap justify-center gap-5 text-white">
 						<li className="font-bold  text-white text-sm">
-							<Link to="*">Home</Link>
+							<Link to="/">Home</Link>
 						</li>
 						<li className="font-bold  text-white text-sm">
 							<Link to="/about">About</Link>

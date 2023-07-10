@@ -25,7 +25,7 @@ const Notfound = () => {
 								className="text-red-500 animate__animated animate-bounce"
 							/>
 						</div>
-						<div className="text-center pt-10 md:w-3/4 md:m-auto">
+						<div className="text-center pt-5 w-10/12 m-auto md:w-3/4 md:m-auto">
 							Sorry! I can not seem to find the page you are looking
 							for. The requested URL {window.location.href} was
 							not found on this server.

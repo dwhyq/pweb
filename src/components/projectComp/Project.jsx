@@ -14,10 +14,10 @@ const Project = (props) => {
           <img
             src={image}
             alt="logo"
-            className="rounded-lg w-3/6 transition-transform duration-2000 ease-in-out hover:scale-110 md:w-4/12"
+            className="rounded-lg w-5/12 transition-transform duration-2000 ease-in-out hover:scale-110 md:w-4/12"
           />
           <span className="text-center w-fit text-xl font-bold">{title}</span>
-          <div className="text-center text-gray-100 w-full p-2 md-w-full">
+          <div className="text-center text-gray-100 w-10/12 p-2 md-w-full">
             {description}
           </div>
           <Link to={link}>
