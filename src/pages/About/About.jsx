@@ -29,7 +29,7 @@ const About = () => {
               <div className="overflow-hidden rounded-xl transform rotate-3 w-[240px] md:w-[300px] lg:w-[300px] animate__animated animate__lightSpeedInLeft">
                 <img src="/ikennaInBlue.jpg" alt="about" className="rounded-xl object-contain" />
               </div>
-              <div className="flex flex-col  md:ml-8 mt-6 md:mt-0">
+              <div className="flex flex-col  md:ml-8 mt-6 md:mt-0 text-center">
                 <div className="font-bold text-lg md:text-2xl p-2 mt-2   w-fit text-left animate__animated animate__zoomIn">
                   {INFO.about.title}
                 </div>

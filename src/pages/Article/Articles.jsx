@@ -32,7 +32,7 @@ const Articles = () => {
 				<div className="flex flex-col flex-grow pt-7 m-auto md:mt-20">
 
 					<div className="mt-10">
-						<div className="font-bold text-xl text-center">
+						<div className="font-bold text-xl text-center px-5">
 							{INFO.articles.title}
 						</div>
 

@@ -10,7 +10,7 @@ const Article = (props) => {
 
 	return (
 		<React.Fragment>
-			<div className="flex gap-2">
+			<div className="flex gap-5">
 				<div className="">
 					<div className="text-sm text-gray-100">{date}</div>
 				</div>

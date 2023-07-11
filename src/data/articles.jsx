@@ -25,10 +25,32 @@ function article_1() {
 function article_2() {
   return {
     date: "7 May 2023",
-    title: "The Benefits of Cloud Computing",
+    title: "Artificial Intelligence in Healthcare",
     description:
-      "Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-    keywords: ["The Benefits of Cloud Computing"],
+      "AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+    style: ``,
+    keywords: [
+      "Artificial Intelligence in Healthcare",
+      "Health care",
+      "Ikenna ikegwuonu",
+      "Ikenna dev",
+    ],
+    body: (
+      <div>
+        <h1>Content of article 2</h1>
+      </div>
+    ),
+  };
+}
+
+
+function article_3() {
+  return {
+    date: "7 May 2023",
+    title: "Design and Functionality [The Debate]",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+    keywords: ["Design and Function [The Debate]"],
 
     body: (
       <div>
@@ -39,32 +61,9 @@ function article_2() {
             className="mb-7 m-auto"
           />
           <div className="m-auto md:w-3/4 lg:w-3/5">
-            Content of article 1 Cloud computing offers a range of benefits,
-            including cost savings and increased flexibility. Find out why more
-            businesses are turning to the cloud
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
         </div>
-      </div>
-    ),
-  };
-}
-
-function article_3() {
-  return {
-    date: "7 May 2023",
-    title: "Artificial Intelligence in Healthcare",
-    description:
-      "AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
-    style: ``,
-    keywords: [
-      "Artificial Intelligence in Healthcare",
-      "Tharindu",
-      "Tharindu N",
-      "Tharindu Nayanajith",
-    ],
-    body: (
-      <div>
-        <h1>Content of article 2</h1>
       </div>
     ),
   };

@@ -19,7 +19,7 @@ const INFO = {
 	},
 
 	about: {
-		title: "I’m Ikenna Ikegwuonu E. I live in Lagos Nigeria, where talent thrives.",
+		title: "I’m Ikenna Ikegwuonu E. and I live in Nigeria, where talent thrives.",
 		description:
 			"I am a dedicated and passionate front-end developer with nearly 2 years of experience in the field. My expertise lies in HTML, CSS JAVASCRIPT (frameworks like React, Tailwind) and I have a deep understanding of branding and marketing. My mission is to create impactful solutions that drive business growth and enhance user experiences. I firmly believe that excellent design and user-friendly interfaces are crucial for the success of any digital product. By seamlessly merging my technical skills with my marketing background, I can develop visually stunning and compelling solutions that captivate users. I am currently seeking new opportunities as a front-end developer, where I can contribute my skills to a dynamic team. With my experience and dedication, I aim to make a lasting impact by building remarkable tech products that push the boundaries of innovation. If you are looking for a professional who is passionate about coding and understands the importance of branding, I would be delighted to connect with you. Let's explore new possibilities and collaborate on projects that shape the future of technology. Thank you for visiting my website, don't leave without checking out my article section. I look forward to connecting with you soon!"
 	},
@@ -27,7 +27,7 @@ const INFO = {
 	articles: {
 		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Chronological collection of my long-form thoughts on programming, leadership, branding and design, and more.",
 	},
 
 	projects: [
