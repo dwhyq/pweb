@@ -1,6 +1,5 @@
-import { useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import { useState } from "react"; 
+// import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
 
 const ContactForm = () => {
@@ -14,16 +13,9 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      await axios.post("/api/contact", formData);
-      alert("Message sent successfully!");
-      setFormData({ fullName: "", email: "", message: "" });
-    } catch (error) {
-      console.error("Error sending message:", error);
-      alert("An error occurred. Please try again later.");
-    }
+    alert()
   };
 
   return (
@@ -73,7 +65,7 @@ const ContactForm = () => {
         ></textarea>
       </div>
       <div className="w-fit m-auto">
-      <Link to={''} className="">
+      {/* <Link to={''} className=""> */}
         <Button
           type="submit"
           size="md"
@@ -82,7 +74,7 @@ const ContactForm = () => {
         >
           Send
         </Button>
-      </Link>
+      {/* </Link> */}
       </div>
      
     </form>

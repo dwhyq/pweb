@@ -2,7 +2,7 @@ const SEO = [
   {
     page: "home",
     description:
-      "I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+      "I am a frontend developer with expertise in Javascript. I have experience in building scalable, secure and reliable web applications using frameworks like React and it packages.",
     keywords: ["Software developer", "Frontend developer", "Ikenna Ikegwuonu"],
   },
 
@@ -10,7 +10,7 @@ const SEO = [
     page: "about",
     description:
       "I am a frontend developer with expertise in Javascript. I have experience in building scalable, secure and reliable web applications using various framework and technology like React.js.",
-    keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+    keywords: ["Ikenna", "Ikenna E", "Ikenna Ikegwuonu"],
   },
 
   {
@@ -23,7 +23,7 @@ const SEO = [
   {
     page: "projects",
     description:
-      "I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
+      "Building projects has greatly influenced my capabilities and increased my confidence as a developer. Over time, i have worked on projects as a contributor, on my own and also as a volunteer.",
     keywords: ["Software developer", "Frontend developer", "Ikenna Ikegwuonu"],
   },
 
