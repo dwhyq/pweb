@@ -37,7 +37,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="md:my-10 my-12">
+          <div className="md:my-10 my-5">
               <ContactForm />
             </div>
         </div>
