@@ -39,13 +39,13 @@ const Homepage = () => {
               />
             </div>
             <div className="p-2 md:w-fit m-auto">
-              <h1 className="w-fit font-bold text-4xl p-2 text-left animate__animated animate__zoomIn">
+              <h1 className="font-bold text-4xl p-2 md:text-left lg:text-left text-center animate__animated animate__zoomIn">
                 {INFO.homepage.title}
               </h1>
-              <div className="text-gray-100 p-2 w-full md:w-[470px] lg:w-[640px] animate__animated animate__zoomIn">
+              <div className="text-gray-100 md:text-left lg:text-left text-center p-2 w-full md:w-[470px] lg:w-[640px] animate__animated animate__zoomIn">
                 {INFO.homepage.description}
               </div>
-              <div className="flex flex-wrap items-center py-3 w-fit gap-5">
+              <div className="flex flex-wrap justify-center md:justify-start lg:justify-start items-center w-full lg:ml-2 md:ml-2 py-3 gap-5">
                 <Link
                   to={INFO.contact.twitter}
                   target="_blank"
