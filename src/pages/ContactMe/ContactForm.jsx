@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import Button from "../../components/button/Button";
 import axios from "axios"
 
 const ContactForm = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State variable for modal visibility
+  const [submissionMessage, setSubmissionMessage] = useState(""); // State variable for submission message
+
   const validationSchema = yup.object().shape({
     fullName: yup.string().required("Full Name is required"),
     email: yup.string().email("Kindly put a valid email").required("Oops! I need your email to send a reply"),
@@ -22,9 +26,14 @@ const ContactForm = () => {
       try {
         const response = await axios.post('https://formspree.io/f/xvojoyva', values)
         console.log('Form submitted successfully', response);
+        setSubmissionMessage("Thank you for your submission!"); // Set the submission message
+        setIsModalOpen(true); // Open the modal
+
         formik.resetForm();
       } catch (error) {
         console.error('Form submission error')
+        setSubmissionMessage("Oops! An error occurred."); // Set the error message
+        setIsModalOpen(true); // Open the modal
       }
     },
   });
@@ -38,12 +47,17 @@ const ContactForm = () => {
     handleSubmit,
   } = formik;
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSubmissionMessage("");
+  };
+
   return (
     <div className="flex flex-col gap-5 md:flex-row md:w-3/4 lg:w-5/6 lg:gap-20 md:justify-between items-center mx-4 md:mx-auto">
       <div className="md:w-3/5 lg:w md:p-10 w-4/5 shadow-lg text-center p-5 rounded-tl-2xl rounded-br-2xl bg-gray-700">
         <p>
           Kindly reach out to me if you&apos;re interested in collaborating on a
-          project, hiring me for a contract, part-time, or full frontend
+          project, hiring me for a contract, part-time, or full-time frontend
           developer role. I am open to onsite, hybrid, or remote work settings
           both locally and internationally. So feel free to message me. I&apos;m
           always open to new ideas and opportunities.
@@ -114,6 +128,16 @@ const ContactForm = () => {
           </Button>
         </div>
       </form>
+      {isModalOpen && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-5 rounded">
+            <p className="text-orange-500">{submissionMessage}</p>
+            <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
