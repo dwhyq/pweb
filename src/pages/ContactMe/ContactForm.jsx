@@ -1,45 +1,68 @@
-import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { useFormik } from "formik";
+import * as yup from "yup";
 import Button from "../../components/button/Button";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    message: "",
+  const validationSchema = yup.object().shape({
+    fullName: yup.string().required("Full Name is required"),
+    email: yup.string().email("Kindly put a valid email").required("Oops! I need your email to send a reply"),
+    message: yup.string().required("Don't be shy, please write a message"),
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      message: "",
+    },
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      // Add your form submission logic here
+      // values contains the form data
+      console.log(values);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert();
-  };
+      formik.resetForm(); // Reset the form after submission
+    },
+  });
+
+  const {
+    values,
+    errors,
+    touched,
+    handleChange,
+    handleBlur,
+  } = formik;
 
   return (
     <div className="flex flex-col gap-5 md:flex-row md:w-3/4 lg:w-5/6 lg:gap-20 md:justify-between items-center mx-4 md:mx-auto">
       <div className="md:w-3/5 lg:w md:p-10 w-4/5 shadow-lg text-center p-5 rounded-tl-2xl rounded-br-2xl bg-gray-700">
         <p>
-        Kindly reach out to me if you&apos;re interested in collaborating on a project, hiring me for a contract, part time or full frontend developer role. I am open to onsite,hybrid or remote work settings both locally and international. So feel free to message me. I&apos;m always open to new ideas and opportunities.
+          Kindly reach out to me if you&apos;re interested in collaborating on a
+          project, hiring me for a contract, part-time, or full frontend
+          developer role. I am open to onsite, hybrid, or remote work settings
+          both locally and internationally. So feel free to message me. I&apos;m
+          always open to new ideas and opportunities.
         </p>
       </div>
-      <form onSubmit={handleSubmit} className="w-3/4 lg:w-3/4 mx-auto">
+      <form name="contact" method="POST" className="w-3/4 lg:w-3/4 mx-auto">
+      <input type="hidden" name="contact" value="the-name-of-the-html-form" />
         <div className="mb-3">
-          <label htmlFor="fullName" className="block mb-2">
+          <label htmlFor="name" className="block mb-2">
             Full Name
           </label>
           <input
             type="text"
             id="fullName"
-            name="fullName"
-            value={formData.fullName}
+            name="name"
+            value={values.fullName}
             onChange={handleChange}
+            onBlur={handleBlur}
             placeholder="Enter your full name"
-            required
             className="sm:w-full w-full md:w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
           />
+          {touched.fullName && errors.fullName && (
+            <p className="text-red-500">{errors.fullName}</p>
+          )}
         </div>
         <div className="mb-3">
           <label htmlFor="email" className="block mb-2">
@@ -49,12 +72,15 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
+            value={values.email}
             onChange={handleChange}
+            onBlur={handleBlur}
             placeholder="Enter your email address"
-            required
             className="sm:w-full w-full md:w-full px-3 py-2 border border-gray-300 rounded focus:outline-none bg-transparent focus:ring-orange-500 focus:border-orange-500"
           />
+          {touched.email && errors.email && (
+            <p className="text-red-500">{errors.email}</p>
+          )}
         </div>
         <div className="mb-3">
           <label htmlFor="message" className="block mb-2">
@@ -63,15 +89,17 @@ const ContactForm = () => {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
+            value={values.message}
             onChange={handleChange}
+            onBlur={handleBlur}
             placeholder="Type your message here"
-            required
             className="sm:w-full w-full md:w-full px-3 py-2 border bg-transparent border-gray-300 rounded focus:outline-none focus:ring-orange-500 focus:border-orange-500"
           ></textarea>
+          {touched.message && errors.message && (
+            <p className="text-red-500">{errors.message}</p>
+          )}
         </div>
         <div className="w-fit m-auto">
-          {/* <Link to={''} className=""> */}
           <Button
             type="submit"
             size="md"
@@ -80,7 +108,6 @@ const ContactForm = () => {
           >
             Send
           </Button>
-          {/* </Link> */}
         </div>
       </form>
     </div>
