@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
 import Button from "../../components/button/Button";
+import axios from "axios"
 
 const ContactForm = () => {
   const validationSchema = yup.object().shape({
@@ -9,6 +10,7 @@ const ContactForm = () => {
     message: yup.string().required("Don't be shy, please write a message"),
   });
 
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -16,12 +18,14 @@ const ContactForm = () => {
       message: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      // Add your form submission logic here
-      // values contains the form data
-      console.log(values);
-
-      formik.resetForm(); // Reset the form after submission
+    onSubmit: async (values) => {
+      try {
+        const response = await axios.post('https://formspree.io/f/xvojoyva', values)
+        console.log('Form submitted successfully', response);
+        formik.resetForm();
+      } catch (error) {
+        console.error('Form submission error')
+      }
     },
   });
 
@@ -31,6 +35,7 @@ const ContactForm = () => {
     touched,
     handleChange,
     handleBlur,
+    handleSubmit,
   } = formik;
 
   return (
@@ -44,16 +49,15 @@ const ContactForm = () => {
           always open to new ideas and opportunities.
         </p>
       </div>
-      <form name="contact" method="POST" className="w-3/4 lg:w-3/4 mx-auto">
-      <input type="hidden" name="contact" value="the-name-of-the-html-form" />
+      <form onSubmit={handleSubmit} id="contactMeForm" className="w-3/4 lg:w-3/4 mx-auto">
         <div className="mb-3">
-          <label htmlFor="name" className="block mb-2">
+          <label htmlFor="fullName" className="block mb-2">
             Full Name
           </label>
           <input
             type="text"
             id="fullName"
-            name="name"
+            name="fullName"
             value={values.fullName}
             onChange={handleChange}
             onBlur={handleBlur}
