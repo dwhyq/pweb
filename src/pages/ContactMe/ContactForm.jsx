@@ -26,7 +26,7 @@ const ContactForm = () => {
       try {
         const response = await axios.post('https://formspree.io/f/xvojoyva', values)
         console.log('Form submitted successfully', response);
-        setSubmissionMessage("Thank you for your submission!"); // Set the submission message
+        setSubmissionMessage("Thank you for messaging!"); // Set the submission message
         setIsModalOpen(true); // Open the modal
 
         formik.resetForm();
