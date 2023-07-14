@@ -53,8 +53,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col gap-5 md:flex-row md:w-3/4 lg:w-5/6 lg:gap-20 md:justify-between items-center mx-4 md:mx-auto">
-      <div className="md:w-3/5 lg:w md:p-10 w-4/5 shadow-lg text-center p-5 rounded-tl-2xl rounded-br-2xl bg-gray-700">
+    <div className="flex flex-col gap-5 md:flex-row md:mx-4 lg:w-5/6 lg:m-auto md:justify-between items-center mx-4">
+      <div className="md:w-3/5 lg:w-4/12 md:p-10 shadow-lg p-5 rounded-tl-2xl rounded-br-2xl bg-gray-700">
         <p>
           Kindly reach out to me if you&apos;re interested in collaborating on a
           project, hiring me for a contract, part-time, or full-time frontend
@@ -63,7 +63,7 @@ const ContactForm = () => {
           always open to new ideas and opportunities.
         </p>
       </div>
-      <form onSubmit={handleSubmit} id="contactMeForm" className="w-3/4 lg:w-3/4 mx-auto">
+      <form onSubmit={handleSubmit} id="contactMeForm" className="w-3/4 lg:w-4/12 mx-auto">
         <div className="mb-3">
           <label htmlFor="fullName" className="block mb-2">
             Full Name
