@@ -29,23 +29,17 @@ const Homepage = () => {
       <div className="flex flex-col min-h-screen overflow-hidden">
         <NavBar active="home" />
 
-        <div className="flex flex-col flex-grow pt-24 md:pt-32">
-          <div className="flex flex-col md:flex-row md:justify-between items-center mx-4 md:mx-auto lg:w-[1040px] mb-5">
-            <div className="overflow-hidden rounded-xl transform rotate-3 w-[240px] md:w-[300px] lg:w-[250px] animate__animated animate__lightSpeedInLeft">
-              <img
-                src="/portraitWhite.jpeg"
-                alt="about"
-                className="rounded-xl object-contain"
-              />
-            </div>
+        <div className="flex flex-col flex-grow pt-20 md:pt-32">
+          <div className="flex flex-col md:flex-row md:justify-between mx-4 md:mx-auto lg:w-[1040px] mb-5">
+           
             <div className="p-2 md:w-fit m-auto">
-              <h1 className="font-bold text-4xl p-2 md:text-left lg:text-left text-center animate__animated animate__zoomIn">
+              <h1 className="font-bold text-3xl md:text-left lg:text-left animate__animated animate__zoomIn">
                 {INFO.homepage.title}
               </h1>
-              <div className="text-gray-100 md:text-left lg:text-left text-center p-2 w-full md:w-[470px] lg:w-[640px] animate__animated animate__zoomIn">
+              <div className="text-gray-100 md:text-left lg:text-left w-full md:w-[470px] lg:w-[640px] animate__animated animate__zoomIn">
                 {INFO.homepage.description}
               </div>
-              <div className="flex flex-wrap justify-center md:justify-start lg:justify-start items-center w-full lg:ml-2 md:ml-2 py-3 gap-5">
+              <div className="flex flex-wrap justify-left md:justify-start lg:justify-start items-center w-full lg:ml-2 md:ml-2 py-3 gap-5">
                 <Link
                   to={INFO.contact.twitter}
                   target="_blank"
@@ -88,6 +82,13 @@ const Homepage = () => {
                   fileName="resume.pdf"
                 />
               </div>
+            </div>
+            <div className="overflow-hidden rounded-xl transform rotate-3 max-w-[280px] m-auto md:w-[300px] lg:w-[250px] animate__animated animate__lightSpeedInLeft">
+              <img
+                src="/portraitWhite.jpeg"
+                alt="about"
+                className="rounded-xl object-contain"
+              />
             </div>
           </div>
           <div className="flex-shrink-0 mt-5 animate__animated animate__zoomInUp">
