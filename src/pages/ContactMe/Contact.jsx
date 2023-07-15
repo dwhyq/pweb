@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import INFO from "../../data/info";
 import { Link } from "react-router-dom";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="">{INFO.main.email}</div>
         </div>
       </Link>
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 };

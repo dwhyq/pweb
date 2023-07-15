@@ -35,7 +35,7 @@ const Projects = () => {
             <div className="font-bold text-2xl">
               Things I’ve made trying to put my dent in the universe.
             </div>
-            <div className="text-gray-100 py-5 md:py-10 mx-auto max-w-lg md:max-w-2xl lg:max-w-3xl lg:pb-20">
+            <div className="text-gray-100 py-5 md:py-10 mx-auto max-w-lg md:max-w-2xl lg:max-w-3xl lg:pb-20 text-left">
               Building projects has greatly influenced my capabilities and increased my confidence as a developer. Over time, i have worked on projects as a contributor, on my own and also as a volunteer. If you are interested in any of the projects i have worked on, please feel free to check them out and suggest any improvements or enhancements you might have in mind. Collaborating with others is part of my ways to learn and grow, and I am always open
               to new ideas and feedback.
             </div>

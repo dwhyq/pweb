@@ -33,7 +33,7 @@ const About = () => {
                 <div className="font-bold text-lg md:text-2xl p-2 mt-2   w-fit text-left animate__animated animate__zoomIn">
                   {INFO.about.title}
                 </div>
-                <div className="md:overflow-hidden md:h text-gray-100 p-2 w-full md:w-[470px] lg:w-[660px] animate__animated animate__zoomIn">{INFO.about.description}</div>
+                <div className="md:overflow-hidden md:h text-gray-100 text-md p-2 w-full md:w-[470px] lg:w-[660px] animate__animated animate__zoomIn">{INFO.about.description}</div>
               </div>
             </div>
           </div>
