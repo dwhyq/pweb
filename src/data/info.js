@@ -35,7 +35,7 @@ const INFO = {
 			image: "/todoapp.png",
 			title: "Project 1",
 			description:
-				"A todo app built with React & Tailwind-css ,it allows you : Mark tasks as complete to track your progress | Prioritize important tasks to stay focused | Edit existing todo's to keep your information up to date | Delete completed tasks to maintain a clutter-free list",
+				"sound-d-music.netlify.app A todo app built with React & Tailwind-css ,it allows you : Mark tasks as complete to track your progress | Prioritize important tasks to stay focused | Edit existing todo's to keep your information up to date | Delete completed tasks to maintain a clutter-free list",
 			linkText: "View Project",
 			link: "https://todo-web-app-drab.vercel.app/",
 		},
@@ -56,6 +56,14 @@ const INFO = {
 				"A food web app UI built with React & Tailwind-css it has few features like: Filter food based on types | Filter food based on prices |",
 			linkText: "View Project",
 			link: "https://food-web-app-gilt.vercel.app/",
+		},
+		{
+			image: "/musicplayer.jpeg",
+			title: "Project 4",
+			description:
+				"I recently started this very project, feel free to check on it as production progresses.",
+			linkText: "View Project",
+			link: "https://sound-d-music.netlify.app/",
 		},
 		
 	],
