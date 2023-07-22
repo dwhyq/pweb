@@ -33,7 +33,7 @@ const Homepage = () => {
           <div className="flex flex-col md:flex-row md:justify-between mx-4 md:mx-auto lg:w-[1040px] mb-5">
            
             <div className="p-2 md:w-fit m-auto">
-              <h1 className="font-bold text-3xl md:text-left lg:text-left animate__animated animate__zoomIn">
+              <h1 className="font-bold lg:text-5xl md:text-3xl text-3xl mb-2 md:text-left lg:text-left animate__animated animate__zoomIn">
                 {INFO.homepage.title}
               </h1>
               <div className="text-gray-100 md:text-left lg:text-left w-full md:w-[470px] lg:w-[640px] animate__animated animate__zoomIn">

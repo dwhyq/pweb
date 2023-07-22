@@ -41,7 +41,7 @@ const ReadArticle = () => {
 						<img
 							src="/back-button.png"
 							alt="back"
-							className="mt-16 w-1/12 rounded-full border border-orange-500 md:w-[40px] bg-white"
+							className="mt-16 w-1/12 rounded-full border-2 animate-pulse border-green-400 md:w-[40px] bg-white"
 							onClick={() => navigate(-1)}
 						/>
 					</div>
