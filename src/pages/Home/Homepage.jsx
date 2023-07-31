@@ -78,7 +78,7 @@ const Homepage = () => {
                 </Link>
     
                 <DownloadBtn
-                  fileUrl="Ikenna-Dev.pdf"
+                  fileUrl="ikenna-FE-dev-cv.pdf"
                   fileName="ikenna-dev-resume"
                 />
               </div>
