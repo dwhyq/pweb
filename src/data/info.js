@@ -32,8 +32,16 @@ const INFO = {
 
 	projects: [
 		{
-			image: "/todoapp.png",
+			image: "/shopnow.jpeg",
 			title: "Project 1",
+			description:
+				"My first attempt with NextJS. You can view a list of products, search for specific products, sort them by price, add items to the cart, and manage the cart contents.",
+			linkText: "View Project",
+			link: "https://ab-inbev-challenge.vercel.app/",
+		},
+		{
+			image: "/todoapp.png",
+			title: "Project 2",
 			description:
 				"A todo app built with React & Tailwind-css ,it allows you : Mark tasks as complete to track your progress | Prioritize important tasks | Edit task | Delete tasks",
 			linkText: "View Project",
@@ -42,7 +50,7 @@ const INFO = {
 
 		{	
 			image: "/passwordgen.png",
-			title: "Project 2",
+			title: "Project 3",
 			description:
 				"Javascript password-generator that also allows you to copy and clear the password that was generated.",
 			linkText: "View Project",
@@ -51,7 +59,7 @@ const INFO = {
 
 		{	
 			image: "/foodweb.png",
-			title: "Project 3",
+			title: "Project 4",
 			description:
 				"A food web app UI built with React & Tailwind-css it has few features like: Filter food based on types | Filter food based on prices |",
 			linkText: "View Project",
@@ -59,7 +67,7 @@ const INFO = {
 		},
 		{
 			image: "/musicplayer.jpeg",
-			title: "Project 4",
+			title: "Project 5",
 			description:
 				"I recently started this very project, feel free to check on it as production progresses.",
 			linkText: "View Project",
