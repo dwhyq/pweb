@@ -64,16 +64,7 @@ const INFO = {
 				"A food web app UI built with React & Tailwind-css it has few features like: Filter food based on types | Filter food based on prices |",
 			linkText: "View Project",
 			link: "https://food-web-app-gilt.vercel.app/",
-		},
-		{
-			image: "/musicplayer.jpeg",
-			title: "Project 5",
-			description:
-				"I recently started this very project, feel free to check on it as production progresses.",
-			linkText: "View Project",
-			link: "https://sound-d-music.netlify.app/",
-		},
-		
+		}
 	],
 };
 
