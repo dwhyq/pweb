@@ -30,7 +30,7 @@ const Homepage = () => {
         <NavBar active="home" />
 
         <div className="flex flex-col flex-grow pt-20 md:pt-32">
-          <div className="flex flex-col md:flex-row md:justify-between mx-4 md:mx-auto lg:w-[1040px] mb-5">
+          <div className="flex flex-col-reverse md:flex-row md:justify-between mx-4 md:mx-auto lg:w-[1040px] mb-5">
            
             <div className="p-2 md:w-fit m-auto">
               <h1 className="font-bold lg:text-5xl md:text-3xl text-3xl mb-2 md:text-left lg:text-left animate__animated animate__zoomIn">

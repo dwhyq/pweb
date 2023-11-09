@@ -42,7 +42,7 @@ const NavBar = ({ active }) => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 ${
-        isScrolled ? "bg-gray-900" : "bg-transparent"
+        isScrolled ? "bg-orange-500" : "bg-transparent"
       } transition-all duration-300 ease-in-out`}
     >
       <div className="relative">
@@ -101,7 +101,7 @@ const NavBar = ({ active }) => {
           <div className="flex items-center">
             {menuOpen ? (
               <div
-                className="block text-2xl text-white md:hidden cursor-pointer z-50 bg-orange-500 rounded-lg p-1"
+                className="block text-2xl font-extrabold text-orange-500 md:hidden cursor-pointer z-50 bg-white rounded-lg p-1"
                 onClick={closeMenu}
               >
                 <MdClose />
@@ -115,12 +115,12 @@ const NavBar = ({ active }) => {
               </div>
             )}
             {menuOpen && (
-              <div className="fixed inset-0 bg-black opacity-70 z-40 md:hidden lg:hidden"></div>
+              <div className="fixed inset-0 bg-orange-500 z-40 md:hidden lg:hidden"></div>
             )}
           </div>
         </nav>
         {menuOpen && (
-          <div className="md:hidden absolute top-10 left-0 right-0 bg-transparent text-white rounded shadow-lg p-4 z-50 transition-all duration-500 ease-in-out">
+          <div className="md:hidden absolute top-10 left-0 right-0 text-white rounded p-4 z-50 transition-all duration-500 ease-in-out">
             <ul className="flex flex-col items-center gap-3 text-lg">
               <li
                 className={

@@ -55,13 +55,8 @@ function article_3() {
     body: (
       <div>
         <div className="">
-        <img
-            src="https://picsum.photos/200/300"
-            alt="random"
-            className="mb-7 m-auto"
-          />
           <div className="m-auto md:w-3/4 lg:w-3/5">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Content incoming . . .</p>
           </div>
         </div>
       </div>

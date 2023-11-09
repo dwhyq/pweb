@@ -4,7 +4,7 @@
 }
 
 .nav-item.active a {
-	color: rgb(40, 235, 22);
+	color: black;
 }
 
 .nav-link {
@@ -28,6 +28,6 @@
 }
 @media (max-width: 767px) {
 	.nav-item.active a {
-		color: rgb(94, 255, 80);
+		color: black;
 	}
 }
